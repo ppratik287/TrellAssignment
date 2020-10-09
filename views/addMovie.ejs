@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Add Movie Page</h1>
+
+<form action="/movie/add" method="POST">
+    <input type="text" name="name" placeholder="Movie Name" required>
+    <input type="text" name="description" placeholder="Movie Description" required>
+    <input type="text" name="duration" placeholder="Duration"  required>
+    <input type="text" name="direction" placeholder="Direction"  required>
+    <button>Submit</button>
+</form>
+<%- include("partials/footer.ejs") %>

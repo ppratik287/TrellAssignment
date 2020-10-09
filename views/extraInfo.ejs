@@ -1,0 +1,13 @@
+
+<%- include("partials/header.ejs") %>
+<ul>
+    <li><strong>Movie Name: </strong><%= movie.name %></li>
+    <li> <strong>Description: </strong> <%= movie.description %></li>
+    <li> <strong>Duration:  </strong><%= movie.duration %> mins</li>
+    <li> <strong>Direction By:  </strong><%= movie.direction.toUpperCase() %></li>
+    <li> <strong>Total Tickets: </strong> <%= movie.ticket %></li>
+    <li> <strong>Price: </strong> <%= movie.price %></li>
+    <li> <strong>Time Slots: </strong> <%= movie.time %></li>
+    
+
+</ul>

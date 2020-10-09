@@ -1,0 +1,7 @@
+<%- include("partials/header.ejs") %>
+<h2>Your results are:</h2>
+
+    <% movie.forEach(element => { %> 
+        <li><%= element.name %></li>
+    <% }); %>   
+<%- include("partials/footer.ejs") %>

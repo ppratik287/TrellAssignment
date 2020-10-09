@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h3>Add Timings for the Movie:<%=movie.name%></h3>
+
+<form method="POST" action="/movie/dashboard/<%= movie._id %>?_method=PUT">
+    
+    <input type="text" name="movie[name]" value="<%=movie.name%>" required>
+    <input type="text" name="movie[description]" value="<%=movie.description%>" required>
+    <input type="text" name="movie[duration]" value="<%=movie.duration%>"  required>
+    <input type="text" name="movie[direction]" value="<%=movie.direction%>"  required>
+    <input type="text" name="movie[price]" placeholder="Price">
+    <input type="text" name="movie[tickets]" placeholder="Tickets">
+    <input type="text" name="movie[time]" placeholder="Slots">
+    </textarea>
+    <button>Submit</button>
+</form>
+<%- include("partials/footer.ejs") %>

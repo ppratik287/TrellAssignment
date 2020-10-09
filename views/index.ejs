@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<h1>Welcome</h1>
+<% if(user) {%>
+<p><a href="/logout">Logout</a></p>
+<% }%>
+    
+<form action="/movie/result" method="POST">
+Search for a Movie: <input type="search" name="search">
+<button>Submit</button>
+</form>
+
+    <p><a href="/movie/add">Add a movie</a></p>
+
+
+<a href="/movie/dashboard">Click here to checkout the dashboard!</a>
+<%- include("partials/footer.ejs") %>
+

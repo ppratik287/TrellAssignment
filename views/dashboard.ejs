@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+ <% movie.forEach(element => { %> 
+<ul>
+    <li><strong>Movie Name: </strong><%= element.name %></li>
+    <li> <strong>Description: </strong> <%= element.description %></li>
+    <li> <strong>Duration:  </strong><%= element.duration %> mins</li>
+    <li> <strong>Direction By:  </strong><%= element.direction.toUpperCase() %></li>
+    <a href="/movie/dashboard/timing/<%= element._id%>">Click here to add Timings.</a>
+    <br>
+    <a href="/movie/dashboard/<%=element._id%>">Click here to show extra Information.</a>
+</ul>
+ <% }); %>  
+
+ <%- include("partials/footer.ejs") %>
